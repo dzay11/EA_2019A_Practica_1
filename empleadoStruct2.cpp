@@ -22,7 +22,7 @@ struct Empleado {
 	printf("%s %d %s %s\n",empleados[0].nombre,empleados[0].edad,empleados[0].numeroDeEmpleado,empleados[0].numeroDeSeguro);
 		
 	FILE*filepointer;
-	filepointer=fopen("empleados.txt","r+");
+	filepointer=fopen("empleados.txt","w");
 	fprintf(filepointer,"%s %d %s %s\n",empleados[0].nombre,empleados[0].edad,empleados[0].numeroDeEmpleado,empleados[0].numeroDeSeguro);
 	fclose(filepointer);
 		
